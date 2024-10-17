@@ -1,4 +1,3 @@
-// Cargar más películas en la sección 2
 let loadMoreBtn2 = document.querySelector('#load-more-2');
 let currentItem2 = 4;
 
@@ -13,7 +12,6 @@ loadMoreBtn2.onclick = () => {
     }
 };
 
-// Cargar más películas en la sección 3
 let loadMoreBtn3 = document.querySelector('#load-more-3');
 let currentItem3 = 4;
 
@@ -39,11 +37,11 @@ function updateCarrusel() {
 
     let visibleItems;
     if (window.innerWidth < 480) {
-        visibleItems = 1; // Pantallas pequeñas
+        visibleItems = 1;
     } else if (window.innerWidth < 768) {
-        visibleItems = 2; // Pantallas medianas
+        visibleItems = 2;
     } else {
-        visibleItems = 3; // Pantallas grandes
+        visibleItems = 3;
     }
 
     const translateXValue = -(currentIndex * 100) / visibleItems; 
@@ -55,7 +53,7 @@ window.addEventListener('resize', updateCarrusel);
 nextBtn.addEventListener('click', () => {
     const items = document.querySelectorAll('.carrusel-item');
     const totalItems = items.length;
-    const visibleItems = 3; // Número de elementos visibles
+    const visibleItems = 3;
     if (currentIndex < totalItems - visibleItems) {
         currentIndex += 1;
     }

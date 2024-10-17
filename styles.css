@@ -146,44 +146,42 @@ hr {
 
 .novedades-content {
     display: flex;
-    gap: 50px; /* Espacio entre la imagen y el texto */
+    gap: 50px;
     align-items: center;
 }
 
 .preview {
-    flex: 0 0 300px; /* Ajusta el ancho inicial de la imagen */
+    flex: 0 0 300px;
 }
 
 .novedades-img {
-    width: 100%; /* La imagen tomará el tamaño del contenedor .preview */
+    width: 100%;
     height: auto;
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    border-radius: 10px;
 }
 
 .details {
-    flex: 1; /* El texto ocupará el resto del espacio disponible */
+    flex: 1;
     font-size: 18px;
 }
 
 .details h2 {
-    font-size: 50px; /* Ajusta el tamaño del título */
-    margin-bottom: 20px; /* Espacio debajo del h2 */
-    color: #fff; /* Color del texto, opcional */
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
-/* Estilos para los párrafos */
 .details p {
-    font-size: 16px; /* Ajusta el tamaño del texto de los párrafos */
-    line-height: 1.6; /* Ajusta el espacio entre las líneas del párrafo */
-    margin-top: 10px; /* Espacio entre el h2 y el primer párrafo */
-    margin-bottom: 15px; /* Espacio entre los párrafos */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .details p strong {
     font-size: 16px;
     color: #cc0000;
 }
-
 
 .tendencias {
     text-align: center;
@@ -206,7 +204,7 @@ hr {
 }
 
 .carrusel-item {
-    min-width: 33.33%; /* Mostrar 3 elementos en pantalla */
+    min-width: 33.33%;
     box-sizing: border-box;
     padding: 0 10px;
     position: relative;
@@ -245,7 +243,6 @@ button:hover {
     background-color: #cc0000;
 }
 
-/* Botones de navegación */
 .btn {
     position: absolute;
     top: 50%;
@@ -296,7 +293,6 @@ button:hover {
     background-color: #ff6347;
 }
 
-
 .box-container-2,
 .box-container-3 {
     display: grid;
@@ -304,15 +300,12 @@ button:hover {
     gap: 40px;
 }
 
-
 .box-2,
 .box-3 {
     border-radius: 5px;
     z-index: 1000;
     display: none;
 }
-
-
 
 .box-2:nth-child(1),
 .box-2:nth-child(2),
@@ -388,7 +381,6 @@ button:hover {
     background-color: #ff6347;
 }
 
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -418,77 +410,69 @@ button:hover {
 }
 
 .footer-secondary {
-    background-color: #030303; /* Mismo fondo que el resto de la página */
-    color: #ffffff; /* Texto blanco para visibilidad */
-    text-align: center; /* Centrar el texto */
-    padding: 20px 0; /* Espaciado arriba y abajo */
-    font-size: 16px; /* Tamaño de fuente ajustable */
-    margin-top: 40px; /* Separación del footer principal */
-    border-top: 1px solid #ff2f28; /* Línea superior para separar el footer */
+    background-color: #030303;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    margin-top: 40px;
+    border-top: 1px solid #ff2f28;
 }
-
-/* Responsive */
 
 @media (max-width: 768px) {
     .carrusel-item {
-        min-width: 50%; /* Mostrar 2 elementos en pantallas más pequeñas */
+        min-width: 50%;
     }
     .novedades-content {
         flex-direction: column;
-        align-items: flex-start; /* Ajusta la disposición en pantallas pequeñas */
+        align-items: flex-start;
     }
-
     .preview {
         width: 100%;
-        margin-bottom: 20px; /* Espacio inferior cuando la imagen está arriba */
+        margin-bottom: 20px;
     }
     .contacto form {
         width: 100%;
         padding: 10px;
     }
     .footer ul {
-        display: flex; /* Los enlaces estarán en una fila */
-        flex-wrap: wrap; /* Permite que los enlaces se ajusten si es necesario */
-        justify-content: center; /* Centra los enlaces */
-        gap: 15px; /* Añade espacio entre los enlaces */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
         padding: 0;
-        margin-top: 15px; /* Espacio entre el logo y los enlaces */
+        margin-top: 15px;
     }
-
     .footer ul li {
         margin: 0;
     }
-
     .footer a {
-        font-size: 18px; /* Ajusta el tamaño de la fuente */
-        white-space: nowrap; /* Evita que los enlaces se dividan en dos líneas */
+        font-size: 18px;
+        white-space: nowrap;
     }
     
 }
 
 @media (max-width: 480px) {
     .carrusel-item {
-        min-width: 100%; /* Mostrar 1 elemento en pantallas muy pequeñas */
+        min-width: 100%;
     }
-
     .btn {
         font-size: 1.5rem;
         padding: 8px;
     }
-
     button {
         font-size: 14px;
         padding: 8px 16px;
     }
     .footer ul {
-        gap: 10px; /* Reduce el espacio entre enlaces en pantallas muy pequeñas */
+        gap: 10px;
     }
-
     .footer a {
-        font-size: 16px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        font-size: 16px;
     }
     .footer-secondary {
-        font-size: 14px; /* Ajuste del tamaño de la fuente en pantallas pequeñas */
+        font-size: 14px;
     }
 }
 
@@ -496,11 +480,9 @@ button:hover {
     .menu {
         padding: 20px;
     }
-
     .menu label {
         display: initial;
     }
-
     .menu .navbar {
         position: absolute;
         top: 100%;
@@ -509,45 +491,36 @@ button:hover {
         background-color: #030303;
         display: none;
     }
-
     .menu .navbar ul li {
         width: 100%;
     }
-
     .btn-1 {
         display: none;
     }
-
     #menu:checked ~ .navbar {
         display: initial;
     }
-
     .header-content {
         flex-direction: column;
         padding: 180px 30px 30px 30px;
     }
-
     .header-1 {
         width: 100%;
         align-items: center;
     }
-
     .header-2 {
         width: 100%;
         align-items: center;
     }
-
     .movies {
         padding: 30px;
     }
-
     .footer {
         margin-top: 30px;
         padding: 30px;
         flex-direction: column;
         text-align: center;
     }
-
     .footer ul {
         margin-top: 15px;
         justify-content: center;
